@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/nomeCompleto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:hint="NOME DO MOTORISTA"
+        android:singleLine="true">
+        <requestFocus/>
+        </EditText>
+
+        <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/nomeDeguerra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:hint="NOME DE GUERRA"
+        android:singleLine="true">
+        </EditText>
+
+        <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/cpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:maxLength="11"
+        android:hint="CPF"
+        android:inputType="number">
+        </EditText>
+</LinearLayout>
