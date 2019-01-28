@@ -15,8 +15,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:textSize="30dp"
+            android:textSize="20dp"
             android:text="Cadastro de Motorista" />
     </Toolbar>
     <ScrollView
@@ -34,7 +33,6 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal|center_vertical"
                 android:text="Lista de Motorista"
-                android:textColor="@color/cardview_dark_background"
                 android:textSize="20dp"/>
 
             <Button
