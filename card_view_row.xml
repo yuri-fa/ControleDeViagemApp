@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_viagem_codigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txt_viagem_codigo_valor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_viagem_codigo"
+                android:textSize="25dp"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/txt_viagem_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txt_viagem_data_valor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_viagem_data"
+                android:textSize="30dp"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/txt_viagem_motorista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txt_viagem_motorista_nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_viagem_motorista"
+                android:textSize="30dp"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/txt_viagem_veiculo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txt_viagem_veiculo_placa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_viagem_veiculo"
+                android:textSize="30dp"
+                android:paddingLeft="10dp"/>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
