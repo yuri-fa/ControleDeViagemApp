@@ -2,17 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@color/termacoBackground"
+    android:background="@color/cardview_light_background"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <android.support.v7.widget.CardView
+        android:background="@color/cardview_light_background"
         android:id="@+id/card_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="5dp"
-        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="5dp"
+        card_view:cardCornerRadius="10dp"
         card_view:contentPadding="10dp">
 
         <LinearLayout
@@ -20,34 +22,95 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/txt_viagem_codigo"
+            <android.support.v7.widget.CardView
+                android:background="@color/cardview_light_background"
+                android:id="@+id/dados_gerais"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:textSize="25dp"/>
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                card_view:cardElevation="5dp"
+                card_view:cardCornerRadius="10dp"
+                card_view:contentPadding="10dp">
 
-            <TextView
-                android:id="@+id/txt_viagem_data"
-                android:layout_width="wrap_content"
+                <LinearLayout
+                    android:gravity="start"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_viagem_codigo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:textSize="25dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_viagem_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:textSize="25dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_viagem_motorista"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:textSize="25dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_viagem_veiculo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:textSize="25dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:background="@color/cardview_light_background"
+                android:id="@+id/dados_placas"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:textSize="25dp"/>
+                android:layout_gravity="center"
+                card_view:cardElevation="5dp"
+                card_view:cardCornerRadius="10dp"
+                card_view:contentPadding="10dp">
 
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/conjunto_placas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
             <TextView
-                android:id="@+id/txt_viagem_motorista"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:textSize="25dp"/>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-            <TextView
-                android:id="@+id/txt_viagem_veiculo"
+            <LinearLayout
+                android:gravity="bottom"
+                android:orientation="horizontal"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:textSize="25dp"/>
+                android:layout_height="wrap_content">
 
+                <ImageButton
+                    android:id="@+id/editar_viagem"
+                    android:layout_width="45pt"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@color/cardview_light_background"
+                    android:src="@drawable/ic_border_color" />
+                <ImageButton
+                    android:id="@+id/excluir_viagem"
+                    android:foregroundGravity="bottom"
+                    android:background="@color/cardview_light_background"
+                    android:layout_width="45pt"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_delete_forever"/>
+            </LinearLayout>
         </LinearLayout>
     </android.support.v7.widget.CardView>
 </LinearLayout>

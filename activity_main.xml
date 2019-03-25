@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@color/cardview_light_background"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.MainActivity">
 
@@ -16,7 +16,7 @@
         <Toolbar
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/termacoCabecalho">
+            android:background="@color/colorPrimaryDark">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -137,7 +137,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 app:cardCornerRadius="15dp"
-                android:onClick="OnClickNavRecyclerView"
+                android:onClick="OnClickNavExportacaoRelatorio"
                 app:cardElevation="8dp">
 
                 <ImageView

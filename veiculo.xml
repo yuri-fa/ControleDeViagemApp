@@ -17,38 +17,19 @@
             android:layout_height="match_parent"
             android:textSize="20dp"
             android:text="Cadastro de Veiculo"/>
+        <ImageButton
+            android:id="@+id/novoVeiculo"
+            android:paddingVertical="10dp"
+            android:paddingStart="120dp"
+            android:src="@drawable/ic_add_circle_outline"
+            android:background="@color/termacoBackground"
+            android:foregroundGravity="bottom"
+            android:gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
     </Toolbar>
-    <ScrollView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/reciclerViewVeiculo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal|center_vertical"
-                android:text="Lista de Veiculos"
-                android:textColor="@color/cardview_dark_background"
-                android:textSize="20dp"/>
-            <Button
-                android:id="@+id/inserirVeiculo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Novo"/>
-
-            <LinearLayout
-                android:id="@+id/listaVeiculos"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-            </LinearLayout>
-
-         </LinearLayout>
-    </ScrollView>
-
+        android:layout_height="match_parent"/>
 </LinearLayout>
