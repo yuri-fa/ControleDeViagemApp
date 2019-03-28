@@ -24,18 +24,4 @@
             android:singleLine="true">
             <requestFocus/>
         </EditText>
-        <TextView
-            android:id="@+id/txt_motorista_vinculado"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textStyle="bold"
-            android:textSize="15dp"
-            android:text="Motorista vinculado"/>
-        <RadioGroup
-            android:id="@+id/form_group_motoristas"
-            android:orientation="vertical"
-            android:labelFor="@id/txt_motorista_vinculado"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-        </RadioGroup>
 </LinearLayout>
