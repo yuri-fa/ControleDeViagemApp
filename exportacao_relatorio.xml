@@ -21,8 +21,13 @@
         android:layout_height="wrap_content">
     </CalendarView>
     <Button
+        android:id="@+id/btnexportar"
         android:onClick="exportarRelatorio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Gerar relatorio" />
+    <com.github.barteksc.pdfviewer.PDFView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pdf"/>
 </LinearLayout>

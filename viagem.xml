@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/cardview_light_background"
     tools:context=".view.ViagemActivity">
 
     <LinearLayout
@@ -25,61 +26,72 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30dp"
+            android:paddingLeft="10dp"
+            android:textSize="25dp"
             android:gravity="left"
             android:text="Veiculo"/>
-
-
         <Spinner
             android:id="@+id/vei_spinner"
+            android:minWidth="100dp"
+            android:minHeight="50dp"
+            android:paddingLeft="20dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-        </Spinner>
+            android:layout_height="wrap_content"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30dp"
             android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="25dp"
             android:gravity="left|start"
             android:text="Motorista"/>
 
         <Spinner
             android:id="@+id/mot_spinner"
+            android:minWidth="100dp"
+            android:minHeight="50dp"
+            android:paddingLeft="20dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></Spinner>
-        <Button
-            android:id="@+id/btn_addVeiculo"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Adicionar Veiculo"/>
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:paddingTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="25dp"
-            android:gravity="center_vertical|center_horizontal"
-            android:text="Dados dos Produtos"/>
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Dados dos Produtos"/>
+
+            <ImageButton
+                android:id="@+id/novoProduto"
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_light_background"
+                android:foregroundGravity="bottom"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_add_circle_outline" />
+        </LinearLayout>
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:id="@+id/list_placas"
-                android:orientation="vertical"
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/reciclerViewViagemPlacas"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"/>
 
-            </LinearLayout>
         </ScrollView>
         <Button
-            android:id="@+id/btn_addproduto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Adicionar Produto"/>
-        <Button
             android:id="@+id/btn_finalizarViagem"
+            android:onClick="finalizarViagem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Finalizar Viagem"/>
