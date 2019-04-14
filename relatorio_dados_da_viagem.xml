@@ -105,7 +105,6 @@
                     android:src="@drawable/ic_border_color" />
                 <ImageButton
                     android:id="@+id/excluir_viagem"
-                    android:foregroundGravity="bottom"
                     android:background="@color/cardview_light_background"
                     android:layout_width="45pt"
                     android:layout_height="wrap_content"
